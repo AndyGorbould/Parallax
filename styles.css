@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+section {
+    font-size: 1em;
+    padding: 2em;
+    /* background-color: gray; */
+    color: white;
+}
+
+title {
+    font-size: 7em;
+    color: aquamarine;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 80px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -4;
+}
+
+.bg {
+    transform: translateZ(-80px) scale(4);
+}
+
+.stars {
+    transform: translateZ(-70px) scale(3);
+    top: 10%;
+}
+
+.clouds {
+    transform: translateZ(-60px) scale(2);
+    top: 20%;
+}
+
+.mountains {
+    transform: translateZ(-50px) scale(2);
+    top: 30%;
+}
+
+.l4 {
+    transform: translateZ(-40px) scale(3);
+    top: 40%;
+}
+
+.l3 {
+    transform: translateZ(-30px) scale(2.5);
+    top: 50%;
+}
+
+.l2 {
+    transform: translateZ(-20px) scale(2);
+    top: 60%;
+}
+
+.l1 {
+    transform: translateZ(-10px) scale(1.5);
+    top: 70%;
+}
+
+.bg,
+.stars,
+.clouds,
+.mountains,
+.l4,
+.l3,
+.l2,
+.l1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
