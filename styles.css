@@ -5,22 +5,42 @@
 
 body {
     margin: 0;
+    background-color: rgb(47, 0, 6);
 }
 
 section {
     font-size: 1em;
     padding: 2em;
-    /* background-color: gray; */
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 20px;
     color: white;
 }
 
 .title {
     position: absolute;
     font-family: 'Tacos';
-    /* font: 'Tacos de Tijuana'; */
-    font-size: 9em;
-    color: rgb(0, 153, 102);
+    font-size: 5em;
+    color: rgb(255, 242, 0);
     transform: translateZ(-10px) scale(.8);
+}
+
+.title2 {
+    position: absolute;
+    font-family: 'Tacos';
+    font-size: 4em;
+    color: rgb(197, 46, 0, 0);
+    
+    transform: translateZ(-10px) scale(.4);
+}
+
+.title3 {
+    position: absolute;
+    font-family: 'Tacos';
+    font-size: 4em;
+    color: rgb(0, 153, 102, 1);
+    transform: translateZ(-20px) translateY(-100px) scale(.8);
+    /* text-shadow: 2px 2px #ff0000; */
+    /* transform: translateY(-100px); */
 }
 
 .wrapper {
@@ -81,10 +101,10 @@ header {
 
 .l1bg {
     background-color: rgb(47, 0, 6);
-    height: 500px;
+    height: 400px;
     width: 100vw;
     /* transform: translateZ(-10px) scale(1.5); */
-    top: 190%;
+    top: 180%;
 }
 
 .bg,
@@ -105,7 +125,7 @@ header {
 
 
 .sec1 {
-    transform: translateY(500px);
+    transform: translateY(667px);
 }
 
 .sec2 {
