@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Tacos';
+    src: url('./img/Tacos\ de\ Tijuana.ttf');
+}
+
 body {
     margin: 0;
 }
@@ -9,9 +14,13 @@ section {
     color: white;
 }
 
-title {
-    font-size: 7em;
-    color: aquamarine;
+.title {
+    position: absolute;
+    font-family: 'Tacos';
+    /* font: 'Tacos de Tijuana'; */
+    font-size: 9em;
+    color: rgb(0, 153, 102);
+    transform: translateZ(-10px) scale(.8);
 }
 
 .wrapper {
@@ -70,6 +79,14 @@ header {
     top: 70%;
 }
 
+.l1bg {
+    background-color: rgb(47, 0, 6);
+    height: 500px;
+    width: 100vw;
+    /* transform: translateZ(-10px) scale(1.5); */
+    top: 190%;
+}
+
 .bg,
 .stars,
 .clouds,
@@ -77,9 +94,20 @@ header {
 .l4,
 .l3,
 .l2,
-.l1 {
+.l1,
+.l1bg {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+
+
+.sec1 {
+    transform: translateY(500px);
+}
+
+.sec2 {
+    top: 150%
 }
